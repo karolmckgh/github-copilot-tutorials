@@ -55,7 +55,6 @@ This is an interactive tutorial system that teaches you GitHub Copilot Chat and 
 | 6 | [Agentic Workflows](lessons/cli/06-agentic-workflows.md) | Multi-step tasks, approvals, and file editing | 50 |
 | 7 | [Advanced Agentic Workflows](lessons/cli/07-agentic-workflows-advanced.md) | Fleet mode, subagents, and TDD | 75 |
 | 8 | [Instructions & Skills](lessons/cli/08-instructions.md) | Custom instructions and TDD skills | 100 |
-| 9 | [Building an MCP Tool](lessons/cli/09-mcp.md) | Extend Copilot with custom tools | 100 |
 
 ## How It Works
 
