@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "started_at": null,
+  "skillLevel": null,
+  "currentLesson": null,
+  "xp": 0,
+  "achievements": [],
+  "skippedLessons": [],
+  "lessons": {}
+}

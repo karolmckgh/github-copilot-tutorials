@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5BA0E6"/>
+      <stop offset="100%" stop-color="#4A90D9"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="8" width="100" height="90" rx="16" fill="url(#bg)" stroke="#3A7BC8" stroke-width="2"/>
+  <!-- Target icon -->
+  <circle cx="60" cy="45" r="22" fill="none" stroke="white" stroke-width="3"/>
+  <circle cx="60" cy="45" r="14" fill="none" stroke="white" stroke-width="2.5"/>
+  <circle cx="60" cy="45" r="5" fill="white"/>
+  <!-- Label -->
+  <text x="60" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#4A90D9">First Steps</text>
+</svg>

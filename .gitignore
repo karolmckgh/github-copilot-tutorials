@@ -1,0 +1,15 @@
+.worktrees/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+
+# Learner progress (uncommitted by default)
+# progress.json is tracked as a template, but learners may want to ignore their local changes
