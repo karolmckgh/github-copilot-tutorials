@@ -230,4 +230,6 @@ To complete this lesson, you need:
 
 ## Next Steps
 
-Continue to [Lesson 9: Building an MCP Tool](./09-mcp.md) to learn about the Model Context Protocol and extending Copilot with custom tools.
+Great job completing Instructions & Skills! 🎉 You're ready for the capstone lesson.
+
+Continue to [Lesson 9: MCP Servers](./09-mcp-servers.md) to learn how to build custom MCP servers that extend Copilot with your own tools.

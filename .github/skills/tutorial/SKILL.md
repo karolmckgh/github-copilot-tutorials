@@ -41,10 +41,10 @@ The tutorial has 9 lessons organized into two tracks:
 | # | Lesson | Topic | File Path |
 |---|--------|-------|-----------|
 | 5 | CLI Fundamentals | Getting started with CLI | `lessons/cli/05-fundamentals.md` |
-| 6 | Agentic Workflows | Multi-step task execution | `lessons/cli/06-agentic-workflows.md` |
-| 7 | Advanced Agentic Workflows | Fleet mode, subagents, and TDD | `lessons/cli/07-agentic-workflows-advanced.md` |
+| 6 | Plan & Implement | Multi-step task execution | `lessons/cli/06-plan-and-implement.md` |
+| 7 | Fleet Agents | Fleet mode and parallel subagents | `lessons/cli/07-fleet-agents.md` |
 | 8 | Instructions & Skills | Custom instructions and skills | `lessons/cli/08-instructions.md` |
-| 9 | MCP Integration | Model Context Protocol | `lessons/cli/09-mcp.md` |
+| 9 | MCP Servers | Build custom MCP tools | `lessons/cli/09-mcp-servers.md` |
 
 ## Platform Handoff
 
@@ -70,15 +70,15 @@ Here's how to get set up:
 
 5. **Close this CLI session** — type `/exit` to close Copilot CLI for now
 
-You'll come back to the CLI for Lessons 5-9! 🚀
+You'll come back to the CLI for Lessons 5-8! 🚀
 ```
 
-### When User Starts in VS Code Chat and Needs Lessons 5-9 (CLI Track)
+### When User Starts in VS Code Chat and Needs Lessons 5-8 (CLI Track)
 
 If the user is in VS Code Chat and their next lesson is 5+, guide them to the CLI:
 
 ```
-📋 **Lessons 5-9 are done in the Copilot CLI!**
+📋 **Lessons 5-8 are done in the Copilot CLI!**
 
 1. Open your terminal
 2. Navigate to the `github-copilot-tutorials` folder
@@ -353,7 +353,7 @@ When user asks for progress:
 
 **Skill Level:** {intermediate}
 **Started:** {Jan 15, 2025}
-**Current Lesson:** {6 - Agentic Workflows}
+**Current Lesson:** {6 - Plan & Implement}
 
 **Chat Track:**
 ⏭️ 1. Introduction (skipped)
@@ -363,10 +363,9 @@ When user asks for progress:
 
 **CLI Track:**
 ✅ 5. Fundamentals
-→  6. Agentic Workflows (in progress)
-○  7. Advanced Agentic Workflows
+→  6. Plan & Implement (in progress)
+○  7. Fleet Agents
 ○  8. Instructions
-○  9. MCP
 
 **Progress:** 1/6 lessons completed (17%)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -420,8 +419,8 @@ If `progress.json` doesn't exist or is invalid:
 > "It looks like you haven't started the tutorial yet! Would you like me to begin with onboarding to assess your skill level? Just say 'start'."
 
 ### Invalid Lesson Number
-If user requests lesson N where N < 1 or N > 9:
-> "The tutorial has lessons 1-9. Which lesson would you like to go to?"
+If user requests lesson N where N < 1 or N > 8:
+> "The tutorial has lessons 1-8. Which lesson would you like to go to?"
 
 ### Already Completed
 If user tries to mark an already-completed lesson as done:
@@ -524,9 +523,9 @@ When giving hints, tailor them to the specific lesson rather than using generic 
 | 4 | When @workspace vs @terminal |
 | 5 | How to launch CLI, checking /context |
 | 6 | How to phrase agentic tasks, reviewing /diff |
-| 7 | Fleet mode, subagents, TDD workflows |
+| 7 | Fleet mode, parallel subagents, contract-first design |
 | 8 | What to put in instructions, creating skills, TDD workflow |
-| 9 | MCP config format, server setup |
+| 9 | MCP concepts, Mail.tm API workflow, `@mcp.tool()` decorator, mcp-config.json |
 
 For example, if a learner is stuck on Lesson 3 and asks for a hint, don't just say "think about what you want to do" — instead guide them toward the right slash command: "Which of the slash commands would help you understand unfamiliar code? Try exploring `/explain`!" 💡
 

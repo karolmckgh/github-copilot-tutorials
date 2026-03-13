@@ -52,9 +52,10 @@ This is an interactive tutorial system that teaches you GitHub Copilot Chat and 
 | # | Lesson | Description | XP |
 |---|--------|-------------|-----|
 | 5 | [CLI Fundamentals](lessons/cli/05-fundamentals.md) | Launch, navigate, and manage CLI sessions | 50 |
-| 6 | [Agentic Workflows](lessons/cli/06-agentic-workflows.md) | Multi-step tasks, approvals, and file editing | 50 |
-| 7 | [Advanced Agentic Workflows](lessons/cli/07-agentic-workflows-advanced.md) | Fleet mode, subagents, and TDD | 75 |
+| 6 | [Plan & Implement](lessons/cli/06-plan-and-implement.md) | Multi-step tasks, approvals, and file editing | 50 |
+| 7 | [Fleet Agents](lessons/cli/07-fleet-agents.md) | Fleet mode and parallel subagents (HTML/CSS) | 75 |
 | 8 | [Instructions & Skills](lessons/cli/08-instructions.md) | Custom instructions and TDD skills | 100 |
+| 9 | [MCP Servers](lessons/cli/09-mcp-servers.md) | Build custom MCP tools for Copilot CLI | 100 |
 
 ## How It Works
 

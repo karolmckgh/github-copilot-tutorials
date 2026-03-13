@@ -82,10 +82,10 @@ For each of the 9 lessons, determine the status and render a row:
 | 3 | Slash Commands | Chat | 25 |
 | 4 | Chat Participants (@workspace, @terminal) | Chat | 25 |
 | 5 | Copilot CLI Fundamentals | CLI | 50 |
-| 6 | Agentic Workflows in CLI | CLI | 50 |
-| 7 | Agentic Workflows Advanced | CLI | 75 |
+| 6 | Plan & Implement | CLI | 50 |
+| 7 | Fleet Agents | CLI | 75 |
 | 8 | Instructions & Skills | Customization | 100 |
-| 9 | Building an MCP Tool | Advanced | 100 |
+| 9 | MCP Servers | CLI | 100 |
 
 **Status indicators:**
 
@@ -105,8 +105,8 @@ Reference these achievement definitions:
 | `first_lesson` | First Steps | 🎯 | Complete any lesson |
 | `chat_master` | Chat Master | 💬 | Complete lessons 1–4 |
 | `cli_pro` | CLI Pro | ⌨️ | Complete lessons 5–7 |
-| `customizer` | Customizer | 🎨 | Complete lessons 8–9 |
-| `mcp_explorer` | MCP Explorer | 🔌 | Complete lesson 9 |
+| `customizer` | Customizer | 🎨 | Complete lesson 8 |
+| `mcp_builder` | MCP Builder | 🔌 | Complete lesson 9 |
 | `completionist` | Completionist | 🏆 | Complete all lessons |
 | `century` | Century Club | 💯 | Earn 100+ XP |
 | `power_learner` | Power Learner | ⚡ | Earn 500+ XP |
@@ -222,7 +222,7 @@ Below is an example dashboard for a learner who has completed lessons 1–6, is 
 
 `[████████░░░░░░░░░░░░]` 67%
 
-**Current Lesson:** 7 — Agentic Workflows Advanced
+**Current Lesson:** 7 — Fleet Agents
 
 ## 📚 Lessons
 
@@ -233,10 +233,9 @@ Below is an example dashboard for a learner who has completed lessons 1–6, is 
 | 3 | Slash Commands | Chat | ✅ Completed | 25 |
 | 4 | Chat Participants (@workspace, @terminal) | Chat | ✅ Completed | 25 |
 | 5 | Copilot CLI Fundamentals | CLI | ✅ Completed | 50 |
-| 6 | Agentic Workflows in CLI | CLI | ✅ Completed | 50 |
-| 7 | Agentic Workflows Advanced | CLI | → In Progress | — |
+| 6 | Plan & Implement | CLI | ✅ Completed | 50 |
+| 7 | Fleet Agents | CLI | → In Progress | — |
 | 8 | Instructions & Skills | Customization | ○ Not Started | — |
-| 9 | Building an MCP Tool | Advanced | ○ Not Started | — |
 
 ## 🏅 Achievements (3/8)
 
@@ -246,7 +245,6 @@ Below is an example dashboard for a learner who has completed lessons 1–6, is 
 | 💬 | Chat Master | ✅ Earned |
 | ⌨️ | CLI Pro | ○ Locked |
 | 🎨 | Customizer | ○ Locked |
-| 🔌 | MCP Explorer | ○ Locked |
 | 🏆 | Completionist | ○ Locked |
 | 💯 | Century Club | ✅ Earned |
 | ⚡ | Power Learner | ○ Locked |
@@ -255,7 +253,7 @@ Below is an example dashboard for a learner who has completed lessons 1–6, is 
 
 | Metric | Value |
 |--------|-------|
-| **Total XP** | 200 / 475 |
+| **Total XP** | 200 / 575 |
 | **Lessons Completed** | 6 / 9 |
 | **Lessons Skipped** | 0 |
 | **Completion** | 67% |
@@ -269,7 +267,7 @@ Below is an example dashboard for a learner who has completed lessons 1–6, is 
 - **All lessons complete:** Show all lessons as `✅ Completed`, XP bar full, congratulatory message.
 - **Skipped lessons:** Skipped lessons show `⏭️ Skipped` and are excluded from the effective lesson count when calculating completion percentage.
 - **`currentLesson` is null:** If `started_at` exists, default to lesson 1. If `started_at` is null, show "Not started".
-- **XP exceeds 475:** Cap the progress bar at 20 filled blocks but still show the actual XP number.
+- **XP exceeds 575:** Cap the progress bar at 20 filled blocks but still show the actual XP number.
 
 ## Integration
 

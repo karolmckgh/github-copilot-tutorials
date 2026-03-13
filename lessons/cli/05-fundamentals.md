@@ -436,4 +436,4 @@ To complete this lesson, say **"verify"**. Copilot will:
 
 ## Next Steps
 
-Continue to [Lesson 6: Agentic Workflows](./06-agentic-workflows.md) to learn how Copilot CLI can execute multi-step tasks autonomously — from debugging builds to scaffolding entire features.
+Continue to [Lesson 6: Plan & Implement](./06-plan-and-implement.md) to learn how Copilot CLI can execute multi-step tasks autonomously — from debugging builds to scaffolding entire features.

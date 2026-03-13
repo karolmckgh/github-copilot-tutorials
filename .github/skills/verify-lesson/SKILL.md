@@ -29,9 +29,9 @@ Based on the current lesson number, check the appropriate criteria:
 | 4 | `exercises/chat/04-workspace-edit.*` | Auto-saved from conversation, then verified (>50 chars) | Workspace editing exercise |
 | 5 | `exercises/cli/05-session.md` | Auto-saved from conversation, then verified (>50 chars) | CLI session notes |
 | 6 | `exercises/cli/06-*.*` (not `.gitkeep`) | Any file matching pattern exists | Feature implementation |
-| 7 | `exercises/cli/07-*.*` (not `.gitkeep`) | Project directory or file exists with tests passing | Fleet mode exercise |
+| 7 | `exercises/cli/07-*.*` (not `.gitkeep`) | Project directory or file exists | Fleet mode exercise |
 | 8 | `.github/copilot-instructions.md` + `.github/skills/tdd/SKILL.md` + `exercises/cli/09-calculator/` | Instruction updated, TDD skill exists, calculator tests pass (Python or TypeScript) | Instructions & Skills |
-| 9 | `.copilot/mcp-config.json` | File exists with server configuration | MCP setup |
+| 9 | `exercises/cli/09-mail-mcp/server.py` + `exercises/cli/09-mail-mcp/test_server.py` + `.copilot/mcp-config.json` | MCP server has tool definitions, tests exist/pass, config file present | MCP Servers |
 
 ### Step 3: Perform Verification
 
@@ -168,7 +168,7 @@ Check: Any file matching exercises/cli/06-*.* exists (excluding .gitkeep)
 Pass if: At least one matching file exists with content (e.g., 06-feature.js, 06-word-counter.py, 06-project-tracker.js)
 ```
 
-#### Lesson 7 - Advanced Agentic Workflows (Fleet Mode)
+#### Lesson 7 - Fleet Agents
 ```
 Check: Any file or directory matching exercises/cli/07-*.* exists (excluding .gitkeep)
 Pass if: At least one matching file exists with content, or a project directory exists
@@ -185,12 +185,13 @@ Bonus: Run tests — "python -m pytest" for Python or "npm test" for TypeScript 
 Pass if: Instruction file updated AND tdd skill exists AND calculator has tests + implementation
 ```
 
-#### Lesson 9 - MCP Configuration
+#### Lesson 9 - MCP Servers
 ```
-Check: .copilot/mcp-config.json exists
-Check: File contains valid JSON
-Check: JSON has "servers" key with at least one server configured
-Pass if: Valid MCP configuration with at least one server
+Check: exercises/cli/09-mail-mcp/server.py contains "@mcp.tool()" (at least one tool defined)
+Check: exercises/cli/09-mail-mcp/test_server.py exists with content (>100 chars)
+Check: .copilot/mcp-config.json contains "mail-tm" server configuration
+Bonus: Run tests — "python -m pytest exercises/cli/09-mail-mcp/test_server.py" — all tests pass
+Pass if: Server has tool definitions AND tests exist AND mcp-config.json has mail-tm entry
 ```
 
 ### Step 4: Handle Result
@@ -283,8 +284,8 @@ Display helpful feedback with what's missing:
 
 ### Lesson 7
 **Missing:** No `exercises/cli/07-*.*` file or project found
-**Expected:** A project built using fleet mode (/fleet) with TDD
-**Tip:** Use `/fleet` to build a multi-file project like a React inventory app. The project should have tests.
+**Expected:** A project built using fleet mode (/fleet)
+**Tip:** Use `/fleet` to build a multi-file project like a React wealth management dashboard.
 
 ### Lesson 8
 **Missing:** One or more of: custom instruction, TDD skill, calculator exercise
@@ -292,9 +293,9 @@ Display helpful feedback with what's missing:
 **Tip:** Follow the three phases: add the instruction, create the TDD skill, then restart and use the skill to build the calculator with add, multiply, and divide.
 
 ### Lesson 9
-**Missing:** `.copilot/mcp-config.json` not found or invalid
-**Expected:** MCP configuration with at least one server
-**Tip:** Configure an MCP server connection. Even a local test server counts!
+**Missing:** One or more of: MCP server, tests, MCP configuration
+**Expected:** `exercises/cli/09-mail-mcp/server.py` with `@mcp.tool()` definitions, `exercises/cli/09-mail-mcp/test_server.py` with tests, and `.copilot/mcp-config.json` with mail-tm server config
+**Tip:** Start by implementing `get_domains` (simplest tool), write a test first, then work through create_account, login, list_messages, and read_message.
 
 ## XP Reference (from Progress Skill)
 
@@ -313,10 +314,10 @@ Display helpful feedback with what's missing:
 | 3 | Slash Commands |
 | 4 | Chat Participants |
 | 5 | Copilot CLI Fundamentals |
-| 6 | Agentic Workflows in CLI |
-| 7 | Advanced Agentic Workflows (Fleet Mode) |
+| 6 | Plan & Implement |
+| 7 | Fleet Agents |
 | 8 | Instructions & Skills |
-| 9 | Building an MCP Tool |
+| 9 | MCP Servers |
 
 ## Integration with Progress Skill
 
@@ -332,8 +333,8 @@ After successful verification, use the Progress Skill to:
    - `first_lesson`: After completing any lesson
    - `chat_master`: After completing lessons 1-4
    - `cli_pro`: After completing lessons 5-7
-   - `customizer`: After completing lessons 8-9
-   - `mcp_explorer`: After completing lesson 9
+   - `customizer`: After completing lesson 8
+   - `mcp_builder`: After completing lesson 9
    - `completionist`: After completing all lessons
    - `century`: After reaching 100+ XP
    - `power_learner`: After reaching 500+ XP

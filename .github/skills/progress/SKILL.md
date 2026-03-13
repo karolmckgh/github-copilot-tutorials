@@ -55,8 +55,8 @@ getXpForLesson(lessonNumber):
 | `first_lesson` | First Steps | Complete your first lesson | 🎯 |
 | `chat_master` | Chat Master | Complete all Chat lessons (1-4) | 💬 |
 | `cli_pro` | CLI Pro | Complete all CLI lessons (5-7) | ⌨️ |
-| `customizer` | Customizer | Complete lessons 8-9 | 🎨 |
-| `mcp_explorer` | MCP Explorer | Complete lesson 9 | 🔌 |
+| `customizer` | Customizer | Complete lesson 8 | 🎨 |
+| `mcp_builder` | MCP Builder | Complete lesson 9 | 🔌 |
 | `completionist` | Completionist | Complete all lessons | 🏆 |
 | `century` | Century Club | Earn 100+ XP | 💯 |
 | `power_learner` | Power Learner | Earn 500+ XP | ⚡ |
@@ -153,8 +153,8 @@ Run after any progress update to check for newly unlocked achievements:
    - first_lesson: lessons object has at least 1 entry
    - chat_master: lessons has all of [1,2,3,4] OR all are in skippedLessons
    - cli_pro: lessons has all of [5,6,7] that are NOT in skippedLessons
-   - customizer: lessons has all of [8,9]
-   - mcp_explorer: lessons has 9
+   - customizer: lessons has 8
+   - mcp_builder: lessons has 9
    - completionist: all lessons completed OR skipped (nothing remaining)
    - century: xp >= 100
    - power_learner: xp >= 500
@@ -248,7 +248,7 @@ After a lesson is completed, call:
 ║  ✅ Lesson 3: Slash Commands (25 XP)                 ║
 ║  ✅ Lesson 4: Chat Participants (@workspace, @terminal) (25 XP) ║
 ║  → Lesson 5: Copilot CLI Fundamentals (current)      ║
-║  ○ Lesson 6: Agentic Workflows in CLI                ║
+║  ○ Lesson 6: Plan & Implement                        ║
 ║  ...                                                  ║
 ╠═══════════════════════════════════════════════════════╣
 ║  ACHIEVEMENTS (2/8)                                   ║

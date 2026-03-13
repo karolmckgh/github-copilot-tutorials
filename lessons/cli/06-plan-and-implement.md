@@ -1,4 +1,4 @@
-# Lesson 6: Agentic Workflows in CLI
+# Lesson 6: Plan & Implement
 
 **XP: 50** | **Difficulty: Intermediate** | **Time: 25 minutes**
 
@@ -489,7 +489,7 @@ You've learned how to leverage Copilot CLI as an autonomous agent!
 
 ## 🚀 What's Next?
 
-Continue to [Lesson 7: Advanced Agentic Workflows — Fleet Mode & TDD](./07-agentic-workflows-advanced.md) to learn how to use `/fleet` for parallel subagents and build full apps with TDD.
+Continue to [Lesson 7: Fleet Agents](./07-fleet-agents.md) to learn how to use `/fleet` for parallel subagents and build full apps fast.
 
 ---
 

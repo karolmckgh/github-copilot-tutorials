@@ -23,7 +23,7 @@ If meaningful progress is found:
 1. **Summarize the existing progress** briefly, e.g.:
    > "Welcome back! 👋 I see you have existing progress:"
    > - **Level:** intermediate
-   > - **Current Lesson:** 6 (Agentic Workflows in CLI)
+   > - **Current Lesson:** 6 (Plan & Implement)
    > - **XP:** 125 ✨
    > - **Completed:** Lessons 1, 2, 3, 5
 
@@ -49,7 +49,7 @@ When invoked, present these 4 options to the user in a clear, formatted list and
 1. "I'm completely new to Copilot"
 2. "I know Chat basics but not CLI"
 3. "I know both Chat and CLI basics"
-4. "I'm advanced - show me custom agents/MCP only"
+4. "I'm advanced - show me custom instructions/skills only"
 
 ### Step 2: Map Selection to Skill Level
 
@@ -60,7 +60,6 @@ Based on the user's selection, determine their skill level and lessons to skip:
 | "I'm completely new to Copilot" | beginner | [] (none) | Lesson 1 |
 | "I know Chat basics but not CLI" | intermediate | [1, 2, 3, 4] | Lesson 5 (Copilot CLI Fundamentals) |
 | "I know both Chat and CLI basics" | advanced | [1, 2, 3, 4, 5, 6, 7] | Lesson 8 (Instructions & Skills) |
-| "I'm advanced - show me custom agents/MCP only" | expert | [1, 2, 3, 4, 5, 6, 7, 8] | Lesson 9 (Building an MCP Tool) |
 
 ### Step 3: Update progress.json
 
@@ -117,10 +116,6 @@ After updating progress.json, provide guidance based on skill level **and curren
 
 > "You're jumping to the customization content. Lessons 1-7 are available for reference if needed. Type 'start lesson 8' when ready."
 
-#### For Expert (Starting at Lesson 9)
-
-> "Let's dive into the advanced topics! Lessons 1-8 are available if you want to revisit anything. Type 'start lesson 9' when ready."
-
 ## Lesson Structure Reference
 
 For mapping purposes, here's the expected lesson structure:
@@ -133,12 +128,12 @@ For mapping purposes, here's the expected lesson structure:
 
 **CLI Section (Lessons 5-7):**
 - Lesson 5: Copilot CLI Fundamentals
-- Lesson 6: Agentic Workflows in CLI
-- Lesson 7: Advanced Agentic Workflows — Fleet Mode & TDD
+- Lesson 6: Plan & Implement
+- Lesson 7: Fleet Agents
 
 **Customization Section (Lessons 8-9):**
 - Lesson 8: Instructions & Skills
-- Lesson 9: Building an MCP Tool
+- Lesson 9: MCP Servers
 
 ## Skipped Lesson Display
 
@@ -154,10 +149,9 @@ Example display for intermediate user:
 ⏭️ Lesson 3: Slash Commands (skipped - click to expand)
 ⏭️ Lesson 4: Chat Participants (@workspace, @terminal) (skipped - click to expand)
 → Lesson 5: Copilot CLI Fundamentals (START HERE)
-  Lesson 6: Agentic Workflows in CLI
-  Lesson 7: Advanced Agentic Workflows — Fleet Mode & TDD
+  Lesson 6: Plan & Implement
+  Lesson 7: Fleet Agents
   Lesson 8: Instructions & Skills
-  Lesson 9: Building an MCP Tool
 ```
 
 ## Re-Assessment
