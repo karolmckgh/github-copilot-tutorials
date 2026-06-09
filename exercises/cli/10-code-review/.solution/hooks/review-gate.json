@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "bash": ".github/hooks/review-gate.sh",
+        "powershell": ".github/hooks/review-gate.ps1",
+        "timeoutSec": 120
+      }
+    ]
+  }
+}
